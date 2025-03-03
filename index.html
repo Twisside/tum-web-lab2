@@ -1,14 +1,79 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My landing page</title>
-    <!-- CHANGE THESE VALUES -->
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- ADD YOUR CODE HERE -->
-  </body>
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <h1>Welcome to the Cookie Shop</h1>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#products">Our Cookies</a></li>
+            <li><a href="#cart">Cart</a></li>
+            <li><a href="#footer">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<section id="home">
+    <div class="home">
+<!--        <img class="cookie4" src="images/cookie4.png" alt="Cookie" height="70" width="70">-->
+<!--        <img class="cookie3" src="images/cookie3.png" alt="Cookie" height="70" width="70">-->
+<!--        <img class="cookie2" src="images/cookie2.png" alt="Cookie" height="70" width="70">-->
+        <h2>Home</h2>
+        <p>Discover the best cookies in town!</p>
+        <button onclick="window.location.href='#products'">Order Now</button>
+    </div>
+</section>
+<section id="about">
+    <div class="about">
+        <h2>About Us</h2>
+        <p>We are a family-owned business dedicated to baking the finest cookies.</p>
+    </div>
+</section>
+<section id="products">
+    <h2>Our Cookies</h2>
+    <div class="catalog">
+        <div class="product">
+
+            <img src="images/chocolate_chip_cookie.png" alt="Chocolate Chip Cookie" height="210" width="210">
+            <h3>Chocolate Chip Cookie</h3>
+            <p>Classic cookie with rich chocolate chips.</p>
+            <button>Order Now</button>
+        </div>
+        <div class="product">
+            <img src="images/oatmeal_raisin_cookie.png" alt="Oatmeal Raisin Cookie" height="210" width="210">
+            <h3>Oatmeal Raisin Cookie</h3>
+            <p>Healthy and delicious oatmeal raisin cookies.</p>
+            <button>Order Now</button>
+        </div>
+        <div class="product">
+            <img src="images/sugar_cookie.png" alt="Sugar Cookie" height="210" width="210">
+            <h3>Sugar Cookie</h3>
+            <p>Sweet and simple sugar cookies.</p>
+            <button>Order Now</button>
+        </div>
+        <div class="product">
+            <img src="images/peanut_butter_cookie.png" alt="Peanut Butter Cookie" height="210" width="210">
+            <h3>Peanut Butter Cookie</h3>
+            <p>Rich and creamy peanut butter cookies.</p>
+            <button>Order Now</button>
+        </div>
+    </div>
+</section>
+<footer id="footer" class="footer">
+<!--    <div class="cookie3">-->
+<!--        <img src="images/cookie3.png" alt="Cookie" height="70" width="70">-->
+<!--    </div>-->
+        <h2>Contact</h2>
+        <p>Get in touch with us at <a href="mailto:info@cookieshop.com">info@cookieshop.com</a>.</p>
+
+        <p>&copy; 2025 Cookie Shop. All rights reserved.</p>
+
+</footer>
+</body>
 </html>
