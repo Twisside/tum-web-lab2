@@ -1,1 +1,141 @@
-/* add your CSS here */
+﻿body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    box-shadow: #e7af6e 0 10px 10px;
+    font-family: 'Cookie', sans-serif;
+    background-color: #e7af6e;
+    color: #31231f;
+    position: static;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+
+    display: inline;
+    margin: 0 1rem;
+}
+
+h2{
+    font-family: 'Cookie', sans-serif;
+    margin-bott: 4rem;
+}
+
+nav ul li a {
+
+    color: #31231f;
+    text-decoration: none;
+}
+
+section {
+
+    padding: 3rem;
+    text-align: center;
+}
+
+
+
+footer {
+    background-color: #31231f;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: static;
+    width: 100%;
+    bottom: 0;
+}
+
+/*.about {*/
+
+/*    background: antiquewhite;*/
+/*    padding: 5rem;*/
+/*    margin: -4rem;*/
+/*}*/
+
+.home button {
+    background-color: #bd7948;
+    color: white;
+    border: none;
+    padding: 0.5rem 2rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.home button:hover {
+    background-color: #e7af6e;
+}
+
+.catalog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.product {
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: rgb(231, 175, 110) 0 5px 20px;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    width: 200px;
+}
+
+
+
+.product img:hover {
+    transform: scale(1.05);
+}
+.product img {
+    transition: transform 0.3s ease;
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.wrap {
+    width: 210px;
+    height: 210px;
+    overflow: hidden;
+}
+
+
+.product h3 {
+    margin: 1rem 0 0.5rem;
+}
+
+.product p {
+    margin: 0.5rem 0 1rem;
+}
+
+.product button {
+    background-color: #bd7948;
+    color: white;
+    border: none;
+    position: relative;
+    margin-bottom:  0.2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.product button:hover {
+    background-color: #e7af6e;
+}
+
+
+@font-face {
+    font-family: 'Cookie'; /*a name to be used later*/
+    src: url('fonts/love-days-love.regular.ttf') format('truetype');
+}
