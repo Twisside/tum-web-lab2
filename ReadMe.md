@@ -13,6 +13,9 @@ Welcome to the Cookie Shop! This is a simple and visually appealing landing page
 - **Responsive Design**: The page is designed to look great on all devices, from desktops to mobile phones, providing a seamless experience for all users.
 - **Interactive Elements**: Hover effects, animations, and transitions enhance the user experience, making the page more dynamic and engaging.
 - **Custom Fonts and Icons**: Use of Google Fonts and Font Awesome icons for a modern and stylish look.
+- **Animated images**: how there is a bit more life on the page with some cozy animations.
+- **Cookie mascot**: A cute cookie mascot that hopefully is just a silly cookie that for sure has none of your data
+- **Gif surprise for mobile users**: very happy when we are vizited so we want to encurage people thet our cookies are a good thing  
 
 ## Live Demo
 https://twisside.github.io/Pweb_lab2/
