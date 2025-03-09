@@ -18,4 +18,4 @@ Welcome to the Cookie Shop! This is a simple and visually appealing landing page
 - **Gif surprise for mobile users**: very happy when we are vizited so we want to encurage people thet our cookies are a good thing  
 
 ## Live Demo
-https://twisside.github.io/Pweb_lab2/
+[https://twisside.github.io/Pweb_lab2/](https://twisside.github.io/tum-web-lab2/)
