@@ -6,13 +6,13 @@
 }
 
 header {
-    box-shadow: #e7af6e 0 10px 10px;
+    /*box-shadow: #e7af6e 0 10px 10px;*/
     font-family: 'Cookie', sans-serif;
     background-color: #e7af6e;
     color: #31231f;
     position: static;
     width: 100%;
-    padding: 1rem;
+    padding: 1rem 0;
     text-align: center;
 }
 
@@ -30,7 +30,7 @@ nav ul li {
 
 h2{
     font-family: 'Cookie', sans-serif;
-    margin-bott: 4rem;
+    margin-bottom: 4rem;
 }
 
 nav ul li a {
@@ -41,8 +41,10 @@ nav ul li a {
 
 section {
 
-    padding: 3rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
     text-align: center;
+
 }
 
 
@@ -51,18 +53,17 @@ footer {
     background-color: #31231f;
     color: white;
     text-align: center;
-    padding: 1rem;
-    position: static;
+    padding: 1rem 0;
     width: 100%;
     bottom: 0;
 }
 
-/*.about {*/
+.about {
+    text-align: left;
+    background: antiquewhite;
+    padding: 4rem;
 
-/*    background: antiquewhite;*/
-/*    padding: 5rem;*/
-/*    margin: -4rem;*/
-/*}*/
+}
 
 .home button {
     background-color: #bd7948;
@@ -71,16 +72,21 @@ footer {
     padding: 0.5rem 2rem;
     border-radius: 4px;
     cursor: pointer;
+    transition: padding-top 0.3s ease;
 }
 .home button:hover {
     background-color: #e7af6e;
+    
 }
 
 .catalog {
+    margin: 1.5rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
+
+
 }
 
 .product {
@@ -96,7 +102,10 @@ footer {
 
 
 .product img:hover {
-    transform: scale(1.05);
+
+    animation: bounce 0s;
+    animation-duration: 1s;
+
 }
 .product img {
     transition: transform 0.3s ease;
@@ -104,19 +113,20 @@ footer {
     border-radius: 8px;
 }
 
-.wrap {
-    width: 210px;
-    height: 210px;
-    overflow: hidden;
-}
+
 
 
 .product h3 {
     margin: 1rem 0 0.5rem;
+
 }
 
 .product p {
     margin: 0.5rem 0 1rem;
+}
+
+p {
+    margin: 2rem;
 }
 
 .product button {
@@ -134,8 +144,74 @@ footer {
     background-color: #e7af6e;
 }
 
+.mascot {
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    width: 100%;
+    height: 100%;
+    animation: cookie 5s step-start infinite;
+
+}
+
+.element_of_surprise {
+    display: none;
+    background-position: center;
+    margin-top: 4rem;
+    padding-bottom: 15rem;
+    padding-top: 4rem;
+    background-image: url("images/cookie monster.gif");
+    background-repeat: no-repeat;
+}
+
+/* Show the element on screens smaller than 768px (typical mobile screen size) */
+@media (max-width: 508px) {
+    .element_of_surprise {
+        display: block;
+    }
+}
+
+@keyframes bounce {
+    0%, 10%, 30%, 50%, 100% {
+        transform: translateY(0);
+    }
+    10% {
+        transform: translateY(-10px) scale(1.05);
+
+    }
+    50% {
+        transform: translateY(-5px) scale(1.03);
+    }
+
+}
+
+@keyframes cookie {
+    0%{
+        background-image: url("cookie_anim/Frame 3cockie.png");
+    }
+    5%{
+        background-image: url("cookie_anim/Frame 4cockie.png");
+    }
+    10%{
+        background-image: url("cookie_anim/Frame 5cockie.png");
+    }
+    50%{
+        background-image: url("cookie_anim/Frame 6cockie.png");
+    }
+    55%{
+        background-image: url("cookie_anim/Frame 7cockie.png");
+    }
+    60%{
+        background-image: url("cookie_anim/Frame 8cockie.png");
+    }
+    100%{
+        background-image: url("cookie_anim/Frame 3cockie.png");
+    }
+}
 
 @font-face {
     font-family: 'Cookie'; /*a name to be used later*/
     src: url('fonts/love-days-love.regular.ttf') format('truetype');
 }
+
