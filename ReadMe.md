@@ -19,4 +19,4 @@ Welcome to the Cookie Shop! The page is designed to showcase our delicious cooki
 - **Animation of the mascot**: Have a friend to be with you so you are not sad.
 - **Elements like 'hover' and buttons with bootstrap**: matching the requirements with the addition of a framework.
 ## Live Demo
-
+https://twisside.github.io/tum-web-lab2/
