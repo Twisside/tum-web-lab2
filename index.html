@@ -4,78 +4,133 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cookie Shop</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-    <h1>Welcome to the Cookie Shop</h1>
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#products">Our Cookies</a></li>
-            <li><a href="#cart">Cart</a></li>
-            <li><a href="#footer">Contact</a></li>
-        </ul>
-    </nav>
+<header class="py-3">
+    <div class="container">
+        <h1>Welcome to the Cookie Shop</h1>
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#products">Our Cookies</a></li>
+                <li class="nav-item"><a class="nav-link" href="#cart">Cart</a></li>
+                <li class="nav-item"><a class="nav-link" href="#footer">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
-<section id="home">
-    <div class="home">
 
-        <h2>Home</h2>
-        <p>Discover the best cookies in town!</p>
-        <button onclick="window.location.href='#products'">Order Now</button>
-        <div class="element_of_surprise"></div>
+<section id="home" class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 mx-auto text-center">
+                <h2 class="mb-4">Home</h2>
+                <p class="lead">Discover the best cookies in town!</p>
+                <button class="btn btn-warning btn-lg" onclick="window.location.href='#products'">Order Now</button>
+                <div class="element_of_surprise mt-5"></div>
+            </div>
+        </div>
     </div>
 </section>
+
 <section id="about">
     <div class="about">
         <h2>About Us</h2>
         <p>We are a family-owned business dedicated to baking the finest cookies.</p>
     </div>
 </section>
-<section id="products">
-    <h2>Our Cookies</h2>
-    <div class="catalog">
-        <div class="product">
 
-            <img src="images/chocolate_chip_cookie.png" alt="Chocolate Chip Cookie" height="210" width="210">
-            <h3>Chocolate Chip Cookie</h3>
-            <p>Classic cookie with rich chocolate chips.</p>
-            <button>Order Now</button>
-        </div>
-        <div class="product">
-            <img src="images/oatmeal_raisin_cookie.png" alt="Oatmeal Raisin Cookie" height="210" width="210">
-            <h3>Oatmeal Raisin Cookie</h3>
-            <p>Healthy and delicious oatmeal raisin cookies.</p>
-            <button>Order Now</button>
-        </div>
-        <div class="product">
-            <img src="images/sugar_cookie.png" alt="Sugar Cookie" height="210" width="210">
-            <h3>Sugar Cookie</h3>
-            <p>Sweet and simple sugar cookies.</p>
-            <button>Order Now</button>
-        </div>
-        <div class="product">
-            <img src="images/peanut_butter_cookie.png" alt="Peanut Butter Cookie" height="210" width="210">
-            <h3>Peanut Butter Cookie</h3>
-            <p>Rich and creamy peanut butter cookies.</p>
-            <button>Order Now</button>
+<!-- SECTION 2: Products section with Bootstrap grid and card components with 1:1 ratio images -->
+<section id="products" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="mb-4">Our Cookies</h2>
+        <div class="row g-4">
+            <div class="col-sm-6 col-lg-3">
+                <div class="card h-100 shadow-sm product">
+                    <div class="product-img-wrapper">
+                        <div class="ratio ratio-1x1">
+                            <img src="images/chocolate_chip_cookie.png" class="card-img object-fit-cover p-3" alt="Chocolate Chip Cookie">
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Chocolate Chip Cookie</h3>
+                        <p class="card-text">Classic cookie with rich chocolate chips.</p>
+                    </div>
+                    <div class="card-footer bg-transparent border-0">
+                        <button class="btn btn-warning w-100">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <div class="card h-100 shadow-sm product">
+                    <div class="product-img-wrapper">
+                        <div class="ratio ratio-1x1">
+                            <img src="images/oatmeal_raisin_cookie.png" class="card-img object-fit-cover p-3" alt="Oatmeal Raisin Cookie">
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Oatmeal Raisin Cookie</h3>
+                        <p class="card-text">Healthy and delicious oatmeal raisin cookies.</p>
+                    </div>
+                    <div class="card-footer bg-transparent border-0">
+                        <button class="btn btn-warning w-100">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <div class="card h-100 shadow-sm product">
+                    <div class="product-img-wrapper">
+                        <div class="ratio ratio-1x1">
+                            <img src="images/sugar_cookie.png" class="card-img object-fit-cover p-3" alt="Sugar Cookie">
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Sugar Cookie</h3>
+                        <p class="card-text">Sweet and simple sugar cookies.</p>
+                    </div>
+                    <div class="card-footer bg-transparent border-0">
+                        <button class="btn btn-warning w-100">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <div class="card h-100 shadow-sm product">
+                    <div class="product-img-wrapper">
+                        <div class="ratio ratio-1x1">
+                            <img src="images/peanut_butter_cookie.png" class="card-img object-fit-cover p-3" alt="Peanut Butter Cookie">
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Peanut Butter Cookie</h3>
+                        <p class="card-text">Rich and creamy peanut butter cookies.</p>
+                    </div>
+                    <div class="card-footer bg-transparent border-0">
+                        <button class="btn btn-warning w-100">Order Now</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
+
 <section>
     <div class="mascot"></div>
 </section>
-<footer id="footer" class="footer">
-<!--    <div class="cookie3">-->
-<!--        <img src="images/cookie3.png" alt="Cookie" height="70" width="70">-->
-<!--    </div>-->
+
+<footer id="footer" class="footer py-4">
+    <div class="container">
         <h2>Contact</h2>
-        <p>Get in touch with us at <a href="mailto:info@cookieshop.com">info@cookieshop.com</a>.</p>
-
+        <p>Get in touch with us at <a href="mailto:info@cookieshop.com" class="text-warning">info@cookieshop.com</a>.</p>
         <p>&copy; 2025 Cookie Shop. All rights reserved.</p>
-
+    </div>
 </footer>
+
+<!-- Bootstrap 5 JS Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
