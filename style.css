@@ -90,13 +90,31 @@ footer {
 }
 
 .mascot {
+    transition: opacity 5s ease-in 5s;
     background-repeat: no-repeat;
     background-position: center;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-    width: 100%;
-    height: 100%;
-    animation: cookie 5s step-start infinite;
+    padding: 6rem;
+    animation: cookie 5s step-start 5s infinite;
+}
+
+.mascot::before {
+    content: "_";
+    opacity: 0;
+}
+.mascot::after{
+    animation: easeIn;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+}
+.mascot:hover:after {
+    content: "Glad to serve cookies";
+    text-align: right;
+    color: #ec5528;
+
+    animation: easeIn;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+
 }
 
 .element_of_surprise {
@@ -113,6 +131,11 @@ footer {
     .element_of_surprise {
         display: block;
     }
+}
+
+@keyframes easeIn {
+    from {opacity: 0}
+    to {opacity: 1}
 }
 
 @keyframes bounce {
